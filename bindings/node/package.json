@@ -1,0 +1,48 @@
+{
+  "name": "@cybotrade/indicators",
+  "gypfile": true,
+  "version": "0.0.9",
+  "description": "The library for calculating technical analysis' indicators",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "check:types": "tsc --noEmit",
+    "build": "pnpm build:gyp && pnpm generate && tsup index.ts",
+    "build:gyp": "pnpm generate:tulipindicators && node-gyp rebuild",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "generate": "tsx generate.ts && pnpm lint:fix",
+    "generate:tulipindicators": "cd tulipindicators && make indicators.h && make tiamalgamation.c && cp indicators.h ../external/ && cp tiamalgamation.c ../external/"
+  },
+  "dependencies": {
+    "@cybotrade/core": "workspace:^",
+    "bindings": "^1.5.0",
+    "node-addon-api": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/bindings": "^1.5.1",
+    "@types/node": "^20.1.3",
+    "@types/prettier": "^2.7.2",
+    "@vitest/ui": "^0.31.0",
+    "camelcase": "^7.0.1",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
+    "vitest": "^0.31.0",
+    "zod": "^3.21.4"
+  },
+  "peerDependencies": {
+    "zod": "^3.21.4"
+  }
+}
