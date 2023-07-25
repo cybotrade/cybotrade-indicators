@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "numpy", "nptyping"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "cybotrade-indicators"
+version = "0.0.1"
+authors = [
+    { name = "Marcus Lee", email = "marcuslee@balaenaquant.com" },
+    { name = "Lee Ze Lim", email = "zelim@balaenaquant.com" },
+]
+description = "This library provides a set of technical analysis indicators that can be used to craft trading strategies."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+]
+
+[project.urls]
+"Homepage" = "https://app.cybotrade.rs"
+"Documentation" = "https://docs.cybotrade.rs"
+
+[mypy]
+plugins = "numpy.typing.mypy_plugin"

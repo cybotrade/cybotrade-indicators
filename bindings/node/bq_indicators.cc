@@ -1,4 +1,4 @@
-#include "../../indicators.h"
+#include "external/indicators.h"
 #include <napi.h>
 
 // A helper function to convert a Napi::Array to a double array.
