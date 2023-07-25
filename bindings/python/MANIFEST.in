@@ -1,0 +1,4 @@
+graft external
+include src/cybotrade_indicators/indicators.pxd
+include pyproject.toml
+include README.md LICENSE AUTHORS

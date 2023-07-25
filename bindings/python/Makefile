@@ -12,3 +12,9 @@ install:
 
 test: 
 	python tests/test.py
+
+release:
+	python setup.py sdist bdist_wheel
+
+upload:
+	python -m twine upload --repository pypi dist/*
