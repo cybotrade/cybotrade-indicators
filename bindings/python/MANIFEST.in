@@ -1,4 +1,7 @@
 graft external
-include src/cybotrade_indicators/indicators.pxd
+include src/cybotrade_indicators/*.pxd
+include src/cybotrade_indicators/*.pyx
+include src/cybotrade_indicators/py.typed
+include src/cybotrade_indicators/__init__.pyi
 include pyproject.toml
 include README.md LICENSE AUTHORS

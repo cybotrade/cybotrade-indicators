@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel", "Cython", "numpy", "nptyping"]
+requires = ["setuptools", "wheel", "Cython", "numpy>=1.25.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
@@ -7,7 +7,7 @@ where = ["src"]
 
 [project]
 name = "cybotrade-indicators"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
     { name = "Marcus Lee", email = "marcuslee@balaenaquant.com" },
     { name = "Lee Ze Lim", email = "zelim@balaenaquant.com" },
@@ -20,10 +20,12 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Typing :: Typed",
 ]
+dependencies = ["numpy>=1.25.0", "nptyping>=2.5.0"]
 
 [project.urls]
-"Homepage" = "https://app.cybotrade.rs"
-"Documentation" = "https://docs.cybotrade.rs"
+Homepage = "https://app.cybotrade.rs"
+Documentation = "https://docs.cybotrade.rs"
+Repository = "https://github.com/cybotrade/cybotrade-indicators"
 
 [mypy]
 plugins = "numpy.typing.mypy_plugin"
