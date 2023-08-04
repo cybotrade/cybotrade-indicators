@@ -132,9 +132,9 @@ typedef struct ti_indicator_info {
   ti_indicator_function indicator;
   ti_indicator_function indicator_ref;
   int type, inputs, options, outputs;
-  const char *input_names[TI_MAXINDPARAMS];
-  const char *option_names[TI_MAXINDPARAMS];
-  const char *output_names[TI_MAXINDPARAMS];
+  const char *input_names[TI_MAXINDPARAMS + 1];
+  const char *option_names[TI_MAXINDPARAMS + 1];
+  const char *output_names[TI_MAXINDPARAMS + 1];
   ti_indicator_stream_new stream_new;
   ti_indicator_stream_run stream_run;
   ti_indicator_stream_free stream_free;
@@ -6062,7 +6062,7 @@ int ti_sma_stream_new(TI_REAL const *options, ti_stream **stream_in) {
     ti_stream_sma **stream = (ti_stream_sma**)stream_in;
     int period = (int)options[0];
     if (period < 1) return TI_INVALID_OPTION;
-    *stream = malloc(sizeof(ti_stream_sma) + sizeof(TI_REAL[period]));
+    *stream = malloc(sizeof(ti_stream_sma) + sizeof(TI_REAL) * period);
     if (!stream) {
         return TI_OUT_OF_MEMORY;
     }
