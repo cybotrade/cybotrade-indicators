@@ -7,7 +7,7 @@ where = ["src"]
 
 [project]
 name = "cybotrade-indicators"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
     { name = "Marcus Lee", email = "marcuslee@balaenaquant.com" },
     { name = "Lee Ze Lim", email = "zelim@balaenaquant.com" },
