@@ -385,9 +385,9 @@ foreach func $indicators {
 
     set type "TI_TYPE_[string toupper $type]"
 
-    set in_names "{\"[join $in_names {","}]\",0}"
-    set opt_names "{\"[join $opt_names {","}]\",0}"
-    set out_names "{\"[join $out_names {","}]\",0}"
+    set in_names "{\"[join $in_names {","}]\"}"
+    set opt_names "{\"[join $opt_names {","}]\"}"
+    set out_names "{\"[join $out_names {","}]\"}"
 
     append indicators_c "    {\"$fn\", \"$n\", ti_[set fn]_start, ti_[set fn], $ref, $type, $in, $opt, $out, $in_names, $opt_names, $out_names, $stream_new, $stream_run, $stream_free},"
 }
