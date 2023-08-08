@@ -38,6 +38,9 @@ INDICATOR_INTERFACE_TEMPLATE = """
 def {name}({inputs}{sep}{options}) -> {return_type}:
     \"\"\"
     {full_name}
+    {input_names}
+    {option_names}
+    {output_names}
     \"\"\"
     pass
 """
@@ -226,6 +229,9 @@ def gen(lib_pyx, lib_pyi):
             sep=', ' if info.options else '',
             options=', '.join(clean_with_type([info.option_names[j] for j in range(info.options)], 'float | int')),
             return_type='NDArray[Shape["*"], Float]' if info.outputs == 1 else 'NDArray[Shape["{dim} *"], Float]'.format(dim=info.outputs),
+            input_names='Inputs: {names}'.format(names=', '.join([info.input_names[j].decode() for j in range(info.inputs)])),
+            option_names='Options: {names}'.format(names=', '.join([info.option_names[j].decode() for j in range(info.options)])),
+            output_names='Outputs: {names}'.format(names=', '.join([info.output_names[j].decode() for j in range(info.outputs)])),
         ))
 
     lib_pyx.write(WRAPPER_TEMPLATE.format(
