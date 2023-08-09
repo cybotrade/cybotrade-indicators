@@ -1878,3 +1878,45 @@ wcprice.inputs = [x.decode() for x in _Indicator(124).inputs]
 wcprice.options = [x.decode() for x in _Indicator(124).options]
 wcprice.outputs = [x.decode() for x in _Indicator(124).outputs]
 
+
+def wilders(real, period):
+    """
+    Wilders Smoothing
+    """
+
+    return _Indicator(125)([real], [period])
+
+wilders.full_name = _Indicator(125).full_name.decode()
+wilders.type = _Indicator(125).type.decode()
+wilders.inputs = [x.decode() for x in _Indicator(125).inputs]
+wilders.options = [x.decode() for x in _Indicator(125).options]
+wilders.outputs = [x.decode() for x in _Indicator(125).outputs]
+
+
+def willr(high, low, close, period):
+    """
+    Williams %R
+    """
+
+    return _Indicator(126)([high, low, close], [period])
+
+willr.full_name = _Indicator(126).full_name.decode()
+willr.type = _Indicator(126).type.decode()
+willr.inputs = [x.decode() for x in _Indicator(126).inputs]
+willr.options = [x.decode() for x in _Indicator(126).options]
+willr.outputs = [x.decode() for x in _Indicator(126).outputs]
+
+
+def wma(real, period):
+    """
+    Weighted Moving Average
+    """
+
+    return _Indicator(127)([real], [period])
+
+wma.full_name = _Indicator(127).full_name.decode()
+wma.type = _Indicator(127).type.decode()
+wma.inputs = [x.decode() for x in _Indicator(127).inputs]
+wma.options = [x.decode() for x in _Indicator(127).options]
+wma.outputs = [x.decode() for x in _Indicator(127).outputs]
+

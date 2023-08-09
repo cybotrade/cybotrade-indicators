@@ -1275,3 +1275,33 @@ def wcprice(high: NDArray[Shape["*", Float]], low: NDArray[Shape["*", Float]], c
     """
     pass
 
+
+def wilders(real: NDArray[Shape["*", Float]], period: float | int) -> NDArray[Shape["*"], Float]:
+    """
+    Wilders Smoothing
+    Inputs: real
+    Options: period
+    Outputs: wilders
+    """
+    pass
+
+
+def willr(high: NDArray[Shape["*", Float]], low: NDArray[Shape["*", Float]], close: NDArray[Shape["*", Float]], period: float | int) -> NDArray[Shape["*"], Float]:
+    """
+    Williams %R
+    Inputs: high, low, close
+    Options: period
+    Outputs: willr
+    """
+    pass
+
+
+def wma(real: NDArray[Shape["*", Float]], period: float | int) -> NDArray[Shape["*"], Float]:
+    """
+    Weighted Moving Average
+    Inputs: real
+    Options: period[9]
+    Outputs: wma(ohlcv)
+    """
+    pass
+
