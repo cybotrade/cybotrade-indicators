@@ -38,7 +38,7 @@ int ti_vu_man_chu_swing(int size, TI_REAL const *const *inputs,
   TI_REAL *shortCondition = outputs[1];
 
   const int swing_period = (int)options[0];
-  const int swing_multiplier = (int)options[1];
+  const double swing_multiplier = (double)options[1];
 
   if (swing_period < 1 || swing_multiplier < 1)
     return TI_INVALID_OPTION;
