@@ -43,8 +43,8 @@ int ti_waddah(int size, TI_REAL const *const *inputs, TI_REAL const *options,
   const int slow_length = (int)options[1];
   const int signal_length = (int)options[2];
   const int BB_length = (int)options[3];
-  const int multiplier = (int)options[4];
-  const int sensitivity = (int)options[5];
+  const double multiplier = (double)options[4];
+  const double sensitivity = (double)options[5];
   if (fast_length < 1 || slow_length < 1 || signal_length < 1 || BB_length < 1)
     return TI_INVALID_OPTION;
 

@@ -40,11 +40,11 @@ int ti_qqe_mod(int size, TI_REAL const *const *inputs, TI_REAL const *options,
   const int rsi_length1 = (int)options[0];
   const int rsi_smoothing1 = (int)options[1];
   const double QQE_factor1 = (double)options[2];
-  const int threshold1 = (int)options[3];
+  const double threshold1 = (double)options[3];
   const int rsi_length2 = (int)options[4];
   const int rsi_smoothing2 = (int)options[5];
   const double QQE_factor2 = (double)options[6];
-  const int threshold2 = (int)options[7];
+  const double threshold2 = (double)options[7];
   const int bollinger_length = (int)options[8];
   const double QQE_multiplier = (double)options[9];
 
