@@ -28,7 +28,7 @@
 /*
  *
  * Version 0.9.2
- * Header Build 1691395352
+ * Header Build 1691569340
  *
  */
 
@@ -42,7 +42,7 @@
 
 
 #define TI_VERSION "0.9.2"
-#define TI_BUILD 1691395352
+#define TI_BUILD 1691569340
 
 
 
@@ -63,7 +63,7 @@ int ti_indicator_count(void);
 
 #define TI_REAL double
 
-#define TI_INDICATOR_COUNT 125 /* Total number of indicators. */
+#define TI_INDICATOR_COUNT 128 /* Total number of indicators. */
 
 #define TI_OKAY 0
 #define TI_INVALID_OPTION 1
