@@ -45,7 +45,7 @@ int ti_indicator_count(void);
 
 #define TI_REAL double
 
-#define TI_INDICATOR_COUNT 125 /* Total number of indicators. */
+#define TI_INDICATOR_COUNT 128 /* Total number of indicators. */
 
 #define TI_OKAY 0
 #define TI_INVALID_OPTION 1
