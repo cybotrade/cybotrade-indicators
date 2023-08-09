@@ -35,7 +35,7 @@
 /*
  *
  * Version 0.9.2
- * Header Build 1691395352
+ * Header Build 1691559199
  *
  */
 
@@ -49,7 +49,7 @@
 
 
 #define TI_VERSION "0.9.2"
-#define TI_BUILD 1691395352
+#define TI_BUILD 1691559199
 
 
 
@@ -1376,7 +1376,7 @@ int ti_zlema(int size, TI_REAL const *const *inputs, TI_REAL const *options, TI_
 /*
  *
  * Version 0.9.2
- * Header Build 1691395352
+ * Header Build 1691559199
  *
  */
 
@@ -1390,7 +1390,7 @@ int ti_zlema(int size, TI_REAL const *const *inputs, TI_REAL const *options, TI_
 
 
 #define TC_VERSION "0.9.2"
-#define TC_BUILD 1691395352
+#define TC_BUILD 1691559199
 
 
 
@@ -1843,7 +1843,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_adx_start(TI_REAL const *options)
 {
   (void)(options);
@@ -1963,7 +1962,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_andean_osc_start(TI_REAL const *options)
 {
   (void)(options);
@@ -2198,7 +2196,6 @@ int ti_aroonosc(int size, TI_REAL const *const *inputs, TI_REAL const *options, 
 }
 int ti_asin_start(TI_REAL const *options) { (void)options; return 0; } int ti_asin(int size, TI_REAL const *const *inputs, TI_REAL const *options, TI_REAL *const *outputs) { const TI_REAL *in1 = inputs[0]; (void)options; TI_REAL *output = outputs[0]; int i; for (i = 0; i < size; ++i) { output[i] = (asin(in1[i])); } return TI_OKAY; }
 int ti_atan_start(TI_REAL const *options) { (void)options; return 0; } int ti_atan(int size, TI_REAL const *const *inputs, TI_REAL const *options, TI_REAL *const *outputs) { const TI_REAL *in1 = inputs[0]; (void)options; TI_REAL *output = outputs[0]; int i; for (i = 0; i < size; ++i) { output[i] = (atan(in1[i])); } return TI_OKAY; }
-
 int ti_atr_start(TI_REAL const *options)
 {
     return (int)options[0] - 1;
@@ -2411,7 +2408,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_boom_pro_start(TI_REAL const *options)
 {
   (void)(options);
@@ -2568,7 +2564,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_braid_filter_start(TI_REAL const *options)
 {
   (void)(options);
@@ -2699,7 +2694,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_chaikin_vol_start(TI_REAL const *options)
 {
     (void)(options);
@@ -2762,7 +2756,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_chandelier_exit_start(TI_REAL const *options)
 {
   (void)(options);
@@ -2857,7 +2850,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_cm_ema_trendbars_start(TI_REAL const *options)
 {
   (void)(options);
@@ -3088,7 +3080,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_di_dx_start(TI_REAL const *options)
 {
     (void)(options);
@@ -3405,7 +3396,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_ha_start(TI_REAL const *options) {
   (void)(options);
   return 0;
@@ -3449,7 +3439,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_half_trend_start(TI_REAL const *options)
 {
   (void)(options);
@@ -3662,7 +3651,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_heatmap_vol_start(TI_REAL const *options)
 {
   (void)(options);
@@ -3766,7 +3754,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_hlc3_start(TI_REAL const *options) {
   (void)(options);
   return 0;
@@ -3854,7 +3841,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_hull_suite_start(TI_REAL const *options)
 {
   (void)(options);
@@ -3909,7 +3895,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_insidebar_start(TI_REAL const *options)
 {
   (void)(options);
@@ -4149,7 +4134,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_macd_fastline_divergence_start(TI_REAL const *options)
 {
   (void)(options);
@@ -4364,7 +4348,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_macd_hist_divergence_start(TI_REAL const *options)
 {
   (void)(options);
@@ -4839,7 +4822,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_mobo_band_start(TI_REAL const *options)
 {
   (void)(options);
@@ -5167,7 +5149,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_price_start(TI_REAL const *options)
 {
     (void)(options);
@@ -5185,7 +5166,6 @@ int ti_price(int size, TI_REAL const *const *inputs, TI_REAL const *options,
     }
     return TI_OKAY;
 }
-
 int ti_psar_start(TI_REAL const *options)
 {
     (void)options;
@@ -5322,7 +5302,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_qqe_mod_start(TI_REAL const *options)
 {
   (void)(options);
@@ -5707,7 +5686,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_rsi_divergence_start(TI_REAL const *options)
 {
   (void)(options);
@@ -5835,7 +5813,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_rvi_start(TI_REAL const *options)
 {
   (void)(options);
@@ -5916,7 +5893,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_rvi_divergence_start(TI_REAL const *options)
 {
   (void)(options);
@@ -6025,7 +6001,6 @@ int ti_rvi_divergence(int size, TI_REAL const *const *inputs,
 }
 int ti_sin_start(TI_REAL const *options) { (void)options; return 0; } int ti_sin(int size, TI_REAL const *const *inputs, TI_REAL const *options, TI_REAL *const *outputs) { const TI_REAL *in1 = inputs[0]; (void)options; TI_REAL *output = outputs[0]; int i; for (i = 0; i < size; ++i) { output[i] = (sin(in1[i])); } return TI_OKAY; }
 int ti_sinh_start(TI_REAL const *options) { (void)options; return 0; } int ti_sinh(int size, TI_REAL const *const *inputs, TI_REAL const *options, TI_REAL *const *outputs) { const TI_REAL *in1 = inputs[0]; (void)options; TI_REAL *output = outputs[0]; int i; for (i = 0; i < size; ++i) { output[i] = (sinh(in1[i])); } return TI_OKAY; }
-
 int ti_sma_start(TI_REAL const *options) { return (int)options[0] - 1; }
 int ti_sma(int size, TI_REAL const *const *inputs, TI_REAL const *options,
            TI_REAL *const *outputs) {
@@ -6122,7 +6097,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_ssl_start(TI_REAL const *options)
 {
   (void)(options);
@@ -6296,7 +6270,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_stc_start(TI_REAL const *options)
 {
   (void)(options);
@@ -6608,7 +6581,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_stoch_divergence_start(TI_REAL const *options)
 {
   (void)(options);
@@ -6742,7 +6714,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_stoch_rsi_start(TI_REAL const *options)
 {
     (void)(options);
@@ -6804,7 +6775,6 @@ int ti_stoch_rsi(int size, TI_REAL const *const *inputs,
     free(nz_stoch2);
     return TI_OKAY;
 }
-
 int ti_stochrsi_start(TI_REAL const *options) {
     return ((int)options[0]) * 2 - 1;
 }
@@ -6917,7 +6887,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_sup_and_res_start(TI_REAL const *options)
 {
   (void)(options);
@@ -7159,7 +7128,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_supertrend_start(TI_REAL const *options)
 {
   (void)(options);
@@ -7176,7 +7144,7 @@ int ti_supertrend(int size, TI_REAL const *const *inputs,
   double *color = outputs[2];
   double *signal = outputs[3];
   const int period = (int)options[0];
-  const int factor = (int)options[1];
+  const TI_REAL factor = options[1];
   if (period < 1)
     return TI_INVALID_OPTION;
   for (int i = 0; i < size; i++)
@@ -7500,7 +7468,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_unshift_start(TI_REAL const *options) {
   (void)(options);
   return 0;
@@ -7530,7 +7497,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_ut_bot_start(TI_REAL const *options)
 {
   (void)(options);
@@ -7648,7 +7614,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 double max_value(double arr[], int n)
 {
   int i;
@@ -7988,7 +7953,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_volatility_oscillator_start(TI_REAL const *options)
 {
   (void)(options);
@@ -8097,7 +8061,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_vu_man_chu_swing_start(TI_REAL const *options)
 {
   (void)(options);
@@ -8338,7 +8301,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_waddah_start(TI_REAL const *options)
 {
   (void)(options);
@@ -8463,7 +8425,6 @@ void get_diver_pivot_low(double const *const *inputs, int size, int left_bar,
                          int right_bar, double *const *outputs);
 void get_diver_pivot_high(double const *const *inputs, int size, int left_bar,
                           int right_bar, double *const *outputs);
-
 int ti_wavetrend_start(TI_REAL const *options)
 {
   (void)(options);

@@ -42,7 +42,7 @@ int ti_supertrend(int size, TI_REAL const *const *inputs,
   double *signal = outputs[3];
 
   const int period = (int)options[0];
-  const int factor = (int)options[1];
+  const TI_REAL factor = options[1];
   if (period < 1)
     return TI_INVALID_OPTION;
 
