@@ -56,7 +56,8 @@ benchmark_talib: benchmark.c libindicators.a
 #This will build all of Tulip Indicators into one .c file.
 #This is recommended to be used with other bindings for ease of build.
 tiamalgamation.c: $(AMAL) indicators.ca indicators.h candles.ca candles.h
-	cat templates/amal.txt indicators.h candles.h utils/buffer.h utils/localbuffer.h utils/minmax.h $(AMAL) indicators.ca candles.ca > $@
+	cat templates/amal.txt indicators.h candles.h utils/buffer.h utils/localbuffer.h utils/minmax.h $(AMAL) indicators.ca candles.ca > $@ \
+		&& cp indicators.h bindings/python/external && cp tiamalgamation.c bindings/python/external && echo "Copied indicators.h and tiamalgamation.c to 'bindings/python/external'"
 
 
 $(OBJS): indicators.h candles.h
